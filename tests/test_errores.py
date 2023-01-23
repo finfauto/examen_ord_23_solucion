@@ -60,22 +60,3 @@ def test_intercambiar_variables(a, b, nueva_a_esperada, nueva_b_esperada):
 
 
 #############################################################
-
-
-#############################################################
-#                      Test Parte 1.D                       #
-#############################################################
-
-testdata_elimina_n = [
-    ([], 4, []),
-    ([1, 2, 3], 3, [1, 2]),
-    ([1, 2], 1, [2])  # <- Falla en este caso (dada la lista de números [1,2] y el número a eliminar es el 1, espera que el resultado sea [2])
-]
-
-
-@pytest.mark.parametrize("lista_de_numeros, n, lista_resultado_esperada", testdata_elimina_n)
-def test_elimina_n(lista_de_numeros, n, lista_resultado_esperada):
-    assert elimina_n(lista_de_numeros, n) == lista_resultado_esperada
-
-
-#############################################################

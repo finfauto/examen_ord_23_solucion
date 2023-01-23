@@ -72,31 +72,3 @@ def intercambiar_variables(a, b):
     return a, b
 
 #############################################################
-
-
-#############################################################
-#                        Parte 1.D                          #
-#############################################################
-
-def elimina_n(lista_de_numeros: [int], n: int) -> [int]:
-    """
-    Esta función recibe una lista de números enteros y un número n.
-    Mediante un bucle while recorremos la lista en busca del número n,
-    que será eliminado de la lista tantas veces como aparezca
-
-    :param lista_de_numeros:
-    :param n:
-    :return:
-    """
-    indice = 0
-    longitud_lista = len(lista_de_numeros)
-    while indice < longitud_lista:
-        # Añade o modifica lo que creas oportuno desde aquí
-        if lista_de_numeros[indice] == n:
-            lista_de_numeros.pop(indice)
-            longitud_lista -= 1
-        indice += 1
-        # Hasta aquí
-    return lista_de_numeros
-
-#############################################################
